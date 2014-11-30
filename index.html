@@ -7,13 +7,16 @@ title: Subway Map API
 	
   <script type="text/javascript">
   
-    $(function () {
-      var url = window.location.search.match(/url=([^&]+)/);
-  if (url && url.length > 1) {
-    url = url[1];
-  } else {
-    url = "http://subway.map.api.apievangelist.com/definitions/subway-maps.json";
-  }
+    $(function () 
+    	{
+		var url = window.location.search.match(/url=([^&]+)/);
+  		if (url && url.length > 1) {
+    	url = url[1];
+  		} 
+  	else 
+  		{
+    	url = "http://subway.map.api.apievangelist.com/definitions/subway-maps.json";
+  		}
   
   window.swaggerUi = new SwaggerUi({
     url: url,
