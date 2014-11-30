@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Services API
+title: Subway Map API
 ---
 
 <div class="swagger-section">
@@ -12,7 +12,7 @@ title: Services API
   if (url && url.length > 1) {
     url = url[1];
   } else {
-    url = "http://services.api.apievangelist.com/definitions/services";
+    url = "http://subway.map.api.apievangelist.com/definitions/subway-maps.json";
   }
   
   window.swaggerUi = new SwaggerUi({
@@ -51,9 +51,7 @@ title: Services API
 
       window.swaggerUi.load();
   });
-  
-  //thisTitle = document.getElementById('resource_default');
-  //alert(thisTitle);
+
   </script>     
 	<div id="swagger-ui-container" class="swagger-ui-wrap"></div>
 </div>
