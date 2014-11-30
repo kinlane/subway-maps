@@ -1,4 +1,4 @@
-title : Services
+title : Subway Maps
 
 markdown: kramdown
 
@@ -7,8 +7,8 @@ lsi: false
 pygments: true
 auto: true
 
-source: services
-destination: services
+source: subway-maps
+destination: subway-maps
 
 permalink: /:categories/:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -16,9 +16,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 paginate: 10
 paginate_path: "/blog/page:num"
 
-production_url : http://services.apievangelist.com
+production_url : http://subway.map.apievangelist.com/
 
-BASE_PATH : http://services.apievangelist.com
+BASE_PATH : http://subway.map.apievangelist.com/
 
 archive_path: /archive.html
 categories_path : /categories.html
