@@ -1,0 +1,21 @@
+{
+  "apis": [
+    {
+	  "name": "API Evangelist - Products",
+	  "description": "This is an demo API showing how to design, develop and deploy APIs for your products.",
+	  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+      "tags": "api evangelist, API, Application Programming Interface, Products",
+      "license": "http://creativecommons.org/licenses/by-sa/3.0/deed.en_US",
+      "attribution": "API Evangelist",
+      "url": "http://products.apievangelist.com/api-commons-manifest.json",
+      "definitions": [
+        {
+          "type": "swagger",
+          "url": "http://products.api.apievangelist.com/swagger/products/products"
+        }
+      ]
+    }
+  ],
+  "tags": "api-commons-manifest",
+  "updated": "07/09/2014"
+}

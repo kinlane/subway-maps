@@ -1,0 +1,79 @@
+{
+  "name": "API Evangelist - Products",
+  "description": "This is an demo API showing how to design, develop and deploy APIs for your products.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+  "url": "http://products.apievangelist.com/",
+  "created": "04/07/2014",
+  "modified": "07/09/2014",
+  "SpecificationVersion": "0.14",  
+  "apis": [
+    {
+      "name": "Products",
+      "description": "Provides access to products available in the system.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+      "humanURL": "http://products.apievangelist.com/",
+      "baseURL": "http://products.api.apievangelist.com/swagger/products/products",
+      "tags": "blog, industry, analysis, news",
+      "properties": [
+        {
+          "type": "signup",
+          "url": "https://apievangelist.3scale.net/"
+        },
+        {
+          "type": "swagger",
+          "url": "http://products.api.apievangelist.com/swagger/products/products"
+        },
+        {
+          "type": "blog",
+          "url": "http://products.apievangelist.com/blog/"
+        },
+        {
+          "type": "apicommonsmanifest",
+          "url": "http://products.apievangelist.com/api-commons-manifest.json"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    }
+  ],
+  "include": [
+    {
+      "name": "API Evangelist - Products",
+      "url": "http://products.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - Screen Capture",
+      "url": "http://screen-capture.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - Image Manipulation",
+      "url": "http://image.manipulation.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - API Ideas",
+      "url": "http://ideas.apievangelist.com/apis.json"
+    },
+    {
+      "name": "Public Private Sector",
+      "url": "http://publicprivatesector.org/apis.json"
+    },
+    {
+      "type": "API Commons",
+      "url": "http://apicommons.org/apis.json"
+    }
+  ],
+  "maintainer": [
+    {
+      "name": "Kin",
+      "twitter": "apievangelist",
+      "email": "kin@email.com"
+    }
+  ],
+  "tags": "api evangelist, API, Application Programming Interface, Products",
+  "modified": "07/09/2014"
+}
