@@ -1,13 +1,20 @@
 ---
 layout: page
-title: Subway Map API
+title: Subway Maps API - Home
 ---
 
 <h1>Subway Map API</h1>
-<p>This projects</p>
 
-<p>This API is maintained by <a href="http://kinlane.com">Kin Lane</a> (<a href="https://twitter.com/kinlane">@kinlane</a>), the API Evangelist. If you have any questions, comments or there are APIs you'd like to see deployed, you can <a href="https://github.com/kinlane/services/issues" target="_blank">submit them on this projects, Github repo issue management</a>. I use <a href="http://bit.ly/13esk6Q" target="_blank">3Scale API Infrastructure</a> to manage <a href="https://apievangelist.3scale.net/" target="_blank">access to my APIs</a>, across all parts of the <a href="http://apievangelist.com/network.html">API Evangelist network</a>.</p>
-<br /><br />
+<p>A long time ago I defined the API Evangelist network using a subway map format, plotting out the different routes you could take, and the locations all along this journey. As with anything I do, this is a work in progress, and I’m needing to regularly update this map. Currently it is in an image, and I use an image mapping tool to make the links—something that is very time consummating.</p>
+
+<p>I think the subway map is an important metaphor for understanding some potentially complex ideas, and provide a single map, complete with legends, supporting content, and links to more details. My problem is I have several maps I need to create, and maintain on a regular basis. Ideally my subway mapping tool would be dynamic, allowing me to make changes as I went along.</p>
+
+<p>While looking for a solution, I stumbled across Subway Map Visualization jQuery Plugin (http://kalyani.com/2010/10/subway-map-visualization-jquery-plugin/), by Nik Kalyani. This plugin would work perfectly for what I wanted to do to visualize the API Evangelist network, but I had another project I wanted to do, in which it somewhat fell short in satsifying.</p> 
+
+<p>There is a lot of talk about the API lifecycle, and I wanted a way to map out the API lifecycle as I saw it, but this concept isn’t something there is one answer for, and I wanted to hear other providers take on their own API lifecycle. I wanted others to potentially build their own API lifecycle subway maps, so I new that the Subway Map plugin needed to be dynamic—so I wrapped it in a web API.</p>
+
+<p>I’m still playing with what is possible, but my Subway Map API allows you to generate maps, adding routes, and locations along the routes. The API just takes advantage of all the features that Nik Kalyani added into the plugin, I just provided web APis for them. This project isn’t fully secured yet, so I can still play with. It will be changing fast, and I will be resetting the database regularly, so if you play with it, make sure and let me know.</p>
+
 <!-- 3scale -->
 <p align="center">
 <a href="http://3scale.net" target="_blank" title="APIs From 3Scale">
