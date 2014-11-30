@@ -1,0 +1,54 @@
+---
+layout: page
+title: Subway Map - Example 1
+---
+
+<h1>Subway Map - Example 1</h1>
+<p>This is an example map that I have imported into the system. It shows what is possible with the Subway Map API.</p>
+<script type="text/javascript" src="http://runtime.api.apievangelist.com/subway-map/jquery.subwayMap-0.5.0.js"></script>	
+<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-grid="false" data-gridNumbers="true" data-lineWidth="8">
+
+	<ul data-color="#FF0000" data-label="Route One">
+		<li data-coords="2,2" data-marker="interchange">One</li>
+		<li data-coords="4,2">Two</li>
+		<li data-coords="5,3" data-dir="E"></li>
+		<li data-coords="5,7" data-marker="@station">Three</li>
+		<li data-coords="6,4" data-marker="interchange" data-markerInfo="h5" data-dir="S">Four</li>
+		<li data-coords="7,4"></li>
+		<li data-coords="7.15,8" data-marker="@station">Five</li>
+		<li data-coords="8,3" data-dir="E"></li>
+		<li data-coords="8,2"></li>
+		<li data-coords="9,1" data-dir="N"></li>
+		<li data-coords="10,2" data-marker="interchange" data-dir="E">Six</li>
+		<li data-coords="10,5"></li>
+		<li data-coords="9,6" data-marker="station" data-dir="S">Seven</li>
+		<li data-coords="6,9"></li>
+		<li data-coords="5,8" data-dir="W"></li>
+		<li data-coords="4,6" data-dir="N"></li>
+		<li data-coords="2,6">Eight</li>
+	</ul>
+
+	<ul data-color="#000" data-label="Route Two" data-shiftCoords="0,-1">
+		<li data-coords="2,6"></li>
+		<li data-coords="2,5.9" data-marker="@interchange"></li>
+		<li data-coords="5,6" data-marker="@station">One</li>
+		<li data-coords="6,6"></li>
+		<li data-coords="7,3" data-marker="@station">Two</li>
+		<li data-coords="7,5" data-marker="station" data-dir="E">Three</li>
+		<li data-coords="7,1" data-marker="interchange">Four</li>
+	</ul>
+		
+</div>
+
+<div id="legend"></div><script type="text/javascript">$(".subway-map").subwayMap({ debug: true });</script> 
+
+<div id="legend"></div><script type="text/javascript">$(".subway-map").subwayMap({ debug: true });</script>
+<p>This API is maintained by <a href="http://kinlane.com">Kin Lane</a> (<a href="https://twitter.com/kinlane">@kinlane</a>), the API Evangelist. If you have any questions, comments or there are APIs you'd like to see deployed, you can <a href="https://github.com/kinlane/services/issues" target="_blank">submit them on this projects, Github repo issue management</a>. I use <a href="http://bit.ly/13esk6Q" target="_blank">3Scale API Infrastructure</a> to manage <a href="https://apievangelist.3scale.net/" target="_blank">access to my APIs</a>, across all parts of the <a href="http://apievangelist.com/network.html">API Evangelist network</a>.</p>
+<br /><br />
+<!-- 3scale -->
+<p align="center">
+<a href="http://3scale.net" target="_blank" title="APIs From 3Scale">
+    <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="padding-bottom: 15px;" />
+</a>        
+</p>
+<!-- 3scale -->    
