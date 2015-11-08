@@ -6,6 +6,17 @@
   <body>
 
     <header class="masthead">
+
+      <script type="text/javascript">
+      	// Do we have a token?
+    	var $oAuth_Token = getUrlVar('oAuth_Token');
+
+  		var $org = '{{ site.org }}';
+  		var $repo = '{{ site.repo }}';
+  		var $oauthio = '{{ site.oauthio }}';
+
+      </script>
+      
       <div class="masthead-inner" align="center">
 
       <h2><a href="http://apievangelist.com">{"Subway Map API"}</a></h2>
