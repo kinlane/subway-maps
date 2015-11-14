@@ -1,0 +1,342 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Subway Map</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://runtime.api.apievangelist.com/subway-map/jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 9pt;
+				font-weight: bold;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #legend
+    {
+       margin-top: 230px;
+        width: 30%;
+        height: 100%;
+				border: 1px solid #000;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+
+    </style>
+</head>
+<body>
+<div class="subway-map" data-columns="30" data-rows="30" data-cellSize="65" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="10">
+    					<ul data-color="#0039A6" data-label="Design">
+						        	<li data-coords="1,1">Best Practices</li>
+							        	<li data-coords="1,2">Core Design</li>
+							        	<li data-coords="1,3">Response</li>
+							        	<li data-coords="1,4">Media Types</li>
+							        	<li data-coords="1,5">Open Standards</li>
+							        	<li data-coords="1,6">Design Process</li>
+							        	<li data-coords="1,7">Organization</li>
+							        	<li data-coords="1,8">Internationalization</li>
+							        	<li data-coords="1,9">Other</li>
+												</ul>
+										<ul data-color="#FF6319" data-label="Hypermedia">
+						        	<li data-coords="2,1">Hypermedia Concepts</li>
+							        	<li data-coords="2,2">Hypermedia Formats</li>
+												</ul>
+										<ul data-color="#6CBE45" data-label="Definition">
+					  	        	<li data-coords="3,1">Translator</li>
+  						  	        	<li data-coords="3,2">Specification</li>
+  						  	        	<li data-coords="3,3">Generator</li>
+  						  	        	<li data-coords="3,4">Parser</li>
+  						  	        	<li data-coords="3,5">Validator</li>
+  						  	        	<li data-coords="3,6">Schema</li>
+  						  	        	<li data-coords="3,7">Converter</li>
+  						  	        	<li data-coords="3,8">Database</li>
+  						  	        	<li data-coords="3,9">Command-Line</li>
+  						  	        	<li data-coords="3,10">Powershell</li>
+  						  	        	<li data-coords="3,11">Aggregator</li>
+  						  	        	<li data-coords="3,12">Editors</li>
+  						  	        	<li data-coords="3,13">IDE Plugin</li>
+  						  	        	<li data-coords="3,14">Forms</li>
+  												</ul>
+										<ul data-color="#996633" data-label="DNS">
+						        	<li data-coords="4,1">Core DNS</li>
+							        	<li data-coords="4,2">Stability</li>
+							        	<li data-coords="4,3">Utility</li>
+												</ul>
+										<ul data-color="#A7A9AC" data-label="Containers">
+						        	<li data-coords="5,1">Core Concepts</li>
+							        	<li data-coords="5,2">API</li>
+												</ul>
+										<ul data-color="#FCCC0A" data-label="Virtualization">
+						        	<li data-coords="6,1">Core Virtualization</li>
+							        	<li data-coords="6,2">Data Virtualization</li>
+							        	<li data-coords="6,3">Import / Export</li>
+							        	<li data-coords="6,4">Other Elements</li>
+												</ul>
+										<ul data-color="#808183" data-label="Deployment">
+					  	        	<li data-coords="7,1">Database to API</li>
+  						  	        	<li data-coords="7,2">Framework</li>
+  						  	        	<li data-coords="7,3">Gateway</li>
+  						  	        	<li data-coords="7,4">Proxy</li>
+  						  	        	<li data-coords="7,5">Connector</li>
+  						  	        	<li data-coords="7,6">Hosting</li>
+  						  	        	<li data-coords="7,7">JSON to API</li>
+  						  	        	<li data-coords="7,8">Scraping</li>
+  						  	        	<li data-coords="7,9">Container</li>
+  						  	        	<li data-coords="7,10">Github</li>
+  						  	        	<li data-coords="7,11">CSV to API</li>
+  												</ul>
+										<ul data-color="#EE352E" data-label="Management">
+						        	<li data-coords="8,1">Onboarding</li>
+							        	<li data-coords="8,2">Documentation</li>
+							        	<li data-coords="8,3">Authentication</li>
+							        	<li data-coords="8,4">Code Management</li>
+							        	<li data-coords="8,5">Self-Service Support</li>
+							        	<li data-coords="8,6">Direct Support</li>
+							        	<li data-coords="8,7">Communications</li>
+							        	<li data-coords="8,8">Updates</li>
+							        	<li data-coords="8,9">Resources</li>
+							        	<li data-coords="8,10">Research & Development</li>
+							        	<li data-coords="8,11">Legal</li>
+							        	<li data-coords="8,12">Environment</li>
+							        	<li data-coords="8,13">Developer Account</li>
+							        	<li data-coords="8,14">Reciprocity</li>
+							        	<li data-coords="8,15">Corporate</li>
+							        	<li data-coords="8,16">Internationalization</li>
+							        	<li data-coords="8,17">Management API</li>
+												</ul>
+										<ul data-color="#00933C" data-label="Monitoring">
+						        	<li data-coords="9,1">Core Monitoring</li>
+							        	<li data-coords="9,2">Management Monitoring</li>
+							        	<li data-coords="9,3">Targeted Monitoring</li>
+							        	<li data-coords="9,4">Authentication</li>
+							        	<li data-coords="9,5">Utility</li>
+							        	<li data-coords="9,6">Notification</li>
+							        	<li data-coords="9,7">Import</li>
+							        	<li data-coords="9,8">Reporting</li>
+							        	<li data-coords="9,9">3rd Party</li>
+												</ul>
+										<ul data-color="#B933AD" data-label="Testing">
+						        	<li data-coords="10,1">Core Testing</li>
+							        	<li data-coords="10,2">Targeted Testing</li>
+							        	<li data-coords="10,3">Authentication</li>
+							        	<li data-coords="10,4">Utility</li>
+							        	<li data-coords="10,5">Import</li>
+							        	<li data-coords="10,6">3rd Party</li>
+												</ul>
+										<ul data-color="#00985F" data-label="Performance">
+						        	<li data-coords="11,1">Core Performance</li>
+							        	<li data-coords="11,2">Targeted Performance</li>
+							        	<li data-coords="11,3">Authentication</li>
+							        	<li data-coords="11,4">Utility</li>
+							        	<li data-coords="11,5">Import</li>
+							        	<li data-coords="11,6">3rd Party</li>
+												</ul>
+										<ul data-color="#4D5357" data-label="Security">
+						        	<li data-coords="12,1">Auth Formats</li>
+							        	<li data-coords="12,2">Auth Considerations</li>
+							        	<li data-coords="12,3">Input Validation</li>
+							        	<li data-coords="12,4">Output Validation</li>
+							        	<li data-coords="12,5">Cryptography</li>
+							        	<li data-coords="12,6">Abuse of Functionality</li>
+							        	<li data-coords="12,7">Data Structure Attacks</li>
+							        	<li data-coords="12,8">Embedded Malicious Code</li>
+							        	<li data-coords="12,9">Injection</li>
+							        	<li data-coords="12,10">Path Traversal Attack</li>
+							        	<li data-coords="12,11">Probabilistic Technique</li>
+							        	<li data-coords="12,12">Protocol Manipulation</li>
+							        	<li data-coords="12,13">Resource Depletion</li>
+							        	<li data-coords="12,14">Resource Manipulation</li>
+												</ul>
+										<ul data-color="#6E3219" data-label="Terms of Service">
+					  	        	<li data-coords="13,1">Accuracy of Information</li>
+  						  	        	<li data-coords="13,2">Security</li>
+  						  	        	<li data-coords="13,3">Opting Out</li>
+  						  	        	<li data-coords="13,4">Sites Covered</li>
+  						  	        	<li data-coords="13,5">Childrens Privacy</li>
+  						  	        	<li data-coords="13,6">Links to Non-Operators Web Sites</li>
+  						  	        	<li data-coords="13,7">Non-Personal Information</li>
+  						  	        	<li data-coords="13,8">Aggregate Information</li>
+  						  	        	<li data-coords="13,9">Log Files</li>
+  						  	        	<li data-coords="13,10">Cookies</li>
+  						  	        	<li data-coords="13,11">Web Beacons</li>
+  						  	        	<li data-coords="13,12">Personal Information</li>
+  						  	        	<li data-coords="13,13">Members-Only Web Sites</li>
+  						  	        	<li data-coords="13,14">How We Use Your Information</li>
+  						  	        	<li data-coords="13,15">Information Sharing</li>
+  						  	        	<li data-coords="13,16">Access To Information</li>
+  												</ul>
+										<ul data-color="#CE8E00" data-label="Privacy">
+					  	        	<li data-coords="14,1">License</li>
+  						  	        	<li data-coords="14,2">Intellectual Property Rights</li>
+  						  	        	<li data-coords="14,3">Permitted and Prohibited Uses</li>
+  						  	        	<li data-coords="14,4">Use of Personally Identifiable Information</li>
+  						  	        	<li data-coords="14,5">User Submissions</li>
+  						  	        	<li data-coords="14,6">Technical Requirements and Limitations</li>
+  						  	        	<li data-coords="14,7">User Discussion Lists and Forums</li>
+  						  	        	<li data-coords="14,8">Liability</li>
+  						  	        	<li data-coords="14,9">Termination</li>
+  						  	        	<li data-coords="14,10">Changes</li>
+  						  	        	<li data-coords="14,11">Links to Other Materials</li>
+  						  	        	<li data-coords="14,12">Warranty Disclaimer</li>
+  						  	        	<li data-coords="14,13">Miscellaneous</li>
+  												</ul>
+										<ul data-color="#FF6319" data-label="Licensing">
+						        	<li data-coords="15,1">Server Code</li>
+							        	<li data-coords="15,2">Data</li>
+							        	<li data-coords="15,3">Content</li>
+							        	<li data-coords="15,4">API</li>
+							        	<li data-coords="15,5">Client Code</li>
+												</ul>
+										<ul data-color="#006983" data-label="Branding">
+					  	        	<li data-coords="16,1">Use of Brand Name</li>
+  						  	        	<li data-coords="16,2">Use of Brand Logo</li>
+  						  	        	<li data-coords="16,3">Use of Product Titles</li>
+  						  	        	<li data-coords="16,4">Content Display Requirements</li>
+  						  	        	<li data-coords="16,5">Data Display Requirements</li>
+  						  	        	<li data-coords="16,6">Image Assets</li>
+  						  	        	<li data-coords="16,7">Icon Assets</li>
+  						  	        	<li data-coords="16,8">Other Assets</li>
+  						  	        	<li data-coords="16,9">Linking Requirements</li>
+  						  	        	<li data-coords="16,10">Naming Your Application</li>
+  						  	        	<li data-coords="16,11">Branding Examples</li>
+  						  	        	<li data-coords="16,12">Full Style Guide</li>
+  						  	        	<li data-coords="16,13">Give Credit</li>
+  						  	        	<li data-coords="16,14">Bring Value</li>
+  												</ul>
+										<ul data-color="#00AF3F" data-label="Discovery">
+						        	<li data-coords="17,1">Specification</li>
+							        	<li data-coords="17,2">Discovery</li>
+							        	<li data-coords="17,3">Directory</li>
+							        	<li data-coords="17,4">Business</li>
+							        	<li data-coords="17,5">Search</li>
+												</ul>
+										<ul data-color="#0039A6" data-label="Client">
+						        	<li data-coords="18,1">Request Editor</li>
+							        	<li data-coords="18,2">Authentication</li>
+							        	<li data-coords="18,3">Environment</li>
+							        	<li data-coords="18,4">Response Viewer</li>
+							        	<li data-coords="18,5">Organization</li>
+							        	<li data-coords="18,6">Import / Export</li>
+							        	<li data-coords="18,7">Tooling</li>
+												</ul>
+										<ul data-color="#C60C30" data-label="IDE">
+					  	        	<li data-coords="19,1">Workspace</li>
+  						  	        	<li data-coords="19,2">Project</li>
+  						  	        	<li data-coords="19,3">Worker</li>
+  						  	        	<li data-coords="19,4">Container</li>
+  						  	        	<li data-coords="19,5">Resources</li>
+  						  	        	<li data-coords="19,6">Analytics</li>
+  						  	        	<li data-coords="19,7">Environment</li>
+  						  	        	<li data-coords="19,8">Github</li>
+  						  	        	<li data-coords="19,9">Editor(s)</li>
+  						  	        	<li data-coords="19,10">Plugins</li>
+  						  	        	<li data-coords="19,11">Autocomplete</li>
+  						  	        	<li data-coords="19,12">Themes</li>
+  						  	        	<li data-coords="19,13">Customize</li>
+  												</ul>
+										<ul data-color="#A626AA" data-label="SDK">
+						        	<li data-coords="20,1">Generate</li>
+							        	<li data-coords="20,2">Import / Export</li>
+							        	<li data-coords="20,3">Discovery</li>
+							        	<li data-coords="20,4">Mobile Management</li>
+							        	<li data-coords="20,5">Code - Platform Development Kits (PDK)</li>
+							        	<li data-coords="20,6">Single Page Applications (SPA)</li>
+												</ul>
+										<ul data-color="#00A1DE" data-label="Embeddable">
+						        	<li data-coords="21,1">Embed Formats</li>
+							        	<li data-coords="21,2">Embeddable Tools</li>
+							        	<li data-coords="21,3">Embed Engines</li>
+												</ul>
+										<ul data-color="#0039A6" data-label="Webhooks">
+						        	<li data-coords="22,1">Core</li>
+							        	<li data-coords="22,2">Inbound</li>
+							        	<li data-coords="22,3">Outbound</li>
+							        	<li data-coords="22,4">Utilities</li>
+							        	<li data-coords="22,5">Operations</li>
+							        	<li data-coords="22,6">3rd Party Integration</li>
+												</ul>
+										<ul data-color="#009B3A" data-label="Monetization">
+						        	<li data-coords="23,1">Acquisition</li>
+							        	<li data-coords="23,2">Development</li>
+							        	<li data-coords="23,3">Operation</li>
+							        	<li data-coords="23,4">Access Levels</li>
+							        	<li data-coords="23,5">Pricing & Credits</li>
+							        	<li data-coords="23,6">Indirect Value Generation</li>
+							        	<li data-coords="23,7">Partner Revenue Generation</li>
+							        	<li data-coords="23,8">Internal Revenue Generation</li>
+												</ul>
+										<ul data-color="#EE0034" data-label="Plans">
+						        	<li data-coords="24,1">Plan Details</li>
+							        	<li data-coords="24,2">Metrics</li>
+							        	<li data-coords="24,3">Limits</li>
+							        	<li data-coords="24,4">API Resources</li>
+							        	<li data-coords="24,5">Rate Limits</li>
+												</ul>
+										<ul data-color="#8E258D" data-label="Partners">
+						        	<li data-coords="25,1">Program Details</li>
+							        	<li data-coords="25,2">Partner Showcase</li>
+							        	<li data-coords="25,3">Partner Program</li>
+							        	<li data-coords="25,4">API</li>
+							        	<li data-coords="25,5">Early Access</li>
+							        	<li data-coords="25,6">Legal</li>
+							        	<li data-coords="25,7">Marketing Activities</li>
+							        	<li data-coords="25,8">Support</li>
+							        	<li data-coords="25,9">Content</li>
+							        	<li data-coords="25,10">Communication</li>
+							        	<li data-coords="25,11">Financial</li>
+												</ul>
+										<ul data-color="#FF7900" data-label="Evangelism">
+						        	<li data-coords="26,1">Goals</li>
+							        	<li data-coords="26,2">Developer Outreach</li>
+							        	<li data-coords="26,3">Blogging</li>
+							        	<li data-coords="26,4">Landscape Analysis</li>
+							        	<li data-coords="26,5">Forum Management</li>
+							        	<li data-coords="26,6">Support</li>
+							        	<li data-coords="26,7">GitHub Management</li>
+							        	<li data-coords="26,8">QA Management</li>
+							        	<li data-coords="26,9">Social Management</li>
+							        	<li data-coords="26,10">Social Bookmarking</li>
+							        	<li data-coords="26,11">Roadmap</li>
+							        	<li data-coords="26,12">Events</li>
+							        	<li data-coords="26,13">Reporting</li>
+							        	<li data-coords="26,14">Internal</li>
+							        	<li data-coords="26,15">Developer Area</li>
+												</ul>
+					</div>
+<div id="legend"></div>
+
+<script type="text/javascript">
+		$(".subway-map").subwayMap({ debug: true });
+</script>
+
+</body>
+</html>
