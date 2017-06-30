@@ -1,0 +1,176 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Subway Map</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://runtime.api.apievangelist.com/subway-map/jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 8pt;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 500px;
+        height:410px;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #legend
+    {
+        float: left;
+        width: 250px;
+        height:400px;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+
+    </style>
+</head>
+<body>
+
+<h1>Subway Map - API Design</h1>
+
+<div class="subway-map" data-columns="30" data-rows="30" data-cellSize="33" data-legendId="legend" data-grid="false" data-gridNumbers="true" data-lineWidth="8">
+
+		<ul data-color="#efefef" data-label="National Projects">
+			<li data-coords="0,20.25"></li>
+			<li data-coords="2.2,18.25" data-marker="@interchange">TAPor2</li>
+			<li data-coords="3.85,16.25" data-marker="@interchange">CWRC</li>
+			<li data-coords="6,14.25"></li>
+			<li data-coords="30,14.25"></li>
+		</ul>
+
+		<ul data-color="#efefef">
+			<li data-coords="14.75,30"></li>
+			<li data-coords="14.75,26" data-marker="interchange">Best Practices</li>
+			<li data-coords="14.75,15.25"></li>
+			<li data-coords="15.75,14.25" data-dir="N"></li>
+			<li data-coords="0,4"></li>
+			<li data-coords="2,4"></li>
+			<li data-coords="3,5" data-marker="interchange" data-dir="E">Design Process</li>
+			<li data-coords="3,8"></li>
+			<li data-coords="3,13.25"></li>
+			<li data-coords="4,14.25" data-dir="S"></li>
+			<li data-coords="6,14.25"></li>
+			<li data-coords="4,9" data-dir="S"></li>
+			<li data-coords="6,9"></li>
+			<li data-coords="10,9"></li>
+			<li data-coords="13.75,9"></li>
+			<li data-coords="14.75,10" data-marker="interchange" data-dir="E">HTTP Methods</li>
+			<li data-coords="14.75,13.25"></li>
+		</ul>
+
+		<ul data-color="#BE202E" data-label="Building Blocks">
+			<li data-coords="3,10" data-marker="interchange">Requests</li>
+			<li data-coords="6,10" data-marker="station">Responses</li>
+			<li data-coords="7,11" data-marker="station" data-dir="E"></li>
+			<li data-coords="7,11.6"></li>
+			<li data-coords="7,13.4">Resources</li>
+			<li data-coords="7,14"></li>
+			<li data-coords="8,15" data-marker="interchange" data-markerInfo="v3" data-dir="S">HTTP Status Success</li>
+			<li data-coords="10,15" data-marker="interchange" data-markerInfo="v3">HTTP Status Redirection</li>
+			<li data-coords="14,15" data-marker="interchange" data-markerInfo="h2">
+Bibliograph</li>
+			<li data-coords="18,15" data-marker="interchange" data-markerInfo="v3">HTTP Status Server Error</li>
+			<li data-coords="21,15" data-marker="interchange" data-markerInfo="v4">HTTP Status User Error</li>
+			<li data-coords="21.5,15" data-dir="E"></li>
+			<li data-coords="22.5,16" data-dir="E"></li>
+			<li data-coords="22.5,18" data-marker="station">HTTP Status Server Error</li>
+			<li data-coords="23.5,19" data-dir="S"></li>
+			<li data-coords="25,19"></li>
+		</ul>
+
+		<ul data-color="#006738" data-label="Definitions">
+			<li data-coords="10,17.3" data-dir="E"></li>
+			<li data-coords="10,22" data-marker="station">Standards</li>
+			<li data-coords="11,23" data-dir="S"></li>
+			<li data-coords="13,23"></li>
+			<li data-coords="14,22" data-dir="E"></li>
+			<li data-coords="14,21" data-marker="interchange" data-markerInfo="h3">Internationalization</li>
+			<li data-coords="14,19.5" data-marker="interchange" data-markerInfo="h3">Media Types</li>
+			<li data-coords="14,11"></li>
+			<li data-coords="14,5" data-marker="station">Schema</li>
+			<li data-coords="14,4"></li>
+		</ul>
+
+		<ul data-color="#652C90" data-label="Hypermedia">
+			<li data-coords="6,6"></li>
+			<li data-coords="6.85,6.5" data-marker="@station">Collection+JSON</li>
+			<li data-coords="8.9,9" data-marker="@interchange">HAL</li>
+			<li data-coords="11,10.9"></li>
+			<li data-coords="12.5,10.9" data-marker="station">JSON-LD</li>
+			<li data-coords="17,10.9"></li>
+			<li data-coords="18,10.9"></li>
+			<li data-coords="19,12" data-dir="E"></li>
+			<li data-coords="19,12.95"></li>
+			<li data-coords="20,13.95" data-dir="S"></li>
+			<li data-coords="21,13.95"></li>
+			<li data-coords="24,13.95" data-marker="station">Siren</li>
+			<li data-coords="26,13.95" data-marker="station">JSON API</li>
+			<li data-coords="29,13.95"></li>
+		</ul>
+
+		<ul data-color="#2E3092" data-label="Design Education">
+			<li data-coords="14.4,24"></li>
+			<li data-coords="14.4,19.2" data-dir="N"></li>
+			<li data-coords="15.4,18.2"></li>
+			<li data-coords="16,18.2"></li>
+			<li data-coords="17,17.2" data-dir="E"></li>
+			<li data-coords="17,17" data-marker="station">API Academy</li>
+			<li data-coords="17,9" data-marker="station">API Stylebook</li>
+			<li data-coords="17,8"></li>
+			<li data-coords="18,7" data-dir="N"></li>
+			<li data-coords="20,7" data-marker="station">API Evangelist</li>
+			<li data-coords="21.4,7"></li>
+		</ul>
+
+		<ul data-color="#FBAF3F" data-label="Organizations">
+			<li data-coords="2,21"></li>
+			<li data-coords="3,21.12" data-marker="@station">Apiary</li>
+			<li data-coords="4.5,21.3"></li>
+			<li data-coords="5.35,20.8" data-marker="@station">Reprezen</li>
+			<li data-coords="7.28,18.3" data-marker="@station">Apigee</li>
+			<li data-coords="8.5,17.3"></li>
+			<li data-coords="10,17.3" data-marker="interchange">APIMATIC</li>
+			<li data-coords="13.4,17.3"></li>
+			<li data-coords="14.4,16.4" data-dir="E"></li>
+			<li data-coords="14.4,15"></li>
+			<li data-coords="14.4,12.8" data-marker="interchange"></li>
+			<li data-coords="14.4,12.4"></li>
+			<li data-coords="15.4,11.4"></li>
+			<li data-coords="17,11.4" data-marker="interchange" data-markerInfo="v2">Apimint</li>
+			<li data-coords="21,11.4" data-marker="station">Materia</li>
+			<li data-coords="23.3,11.4"></li>
+			<li data-coords="25.4,9.4" data-marker="@station">Stoplight</li>
+			<li data-coords="27,7.4" data-marker="@station">Restlet</li>
+			<li data-coords="28.3,6.4"></li>
+		</ul>
+
+	</div>
+<script type="text/javascript">$(".subway-map").subwayMap({ debug: true });</script>
+
+</body>
+</html>
